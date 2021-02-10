@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            font-family: sans-serif;
+        }
+
+        .row {
+            display: flex;
+            height: 50vh;
+            flex-wrap: wrap;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .row .box {
+            float: left;
+            width: 50%;
+            width: 200px;
+            height: 140px;
+            margin: 40px;
+            border-radius: 8px;
+            background-color: blue;
+            background-image: url(placeholder-image.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            position: relative;
+            bottom: -106px;
+        }
+
+        p {
+            font-size: 16px;
+            background-color: white;
+            text-align: center;
+            border: 1px solid rgb(226, 300, 300);
+            padding: 6px;
+        }
+
+        footer .content {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 28px;
+
+        }
+
+        @media screen and (max-width: 1024px) {
+            .row {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .row {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .row {
+                width: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Gallery Heading</h1>
+    </header>
+    <article>
+    <div class="row">
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>Image Title</p>
+            </div>
+        </div>
+    </div>
+</article>
+<br>
+<footer
+class="content">
+<p>Lorem ipsum dolor sit amet, consectetur adispicing elit. 
+    Cras a lacinia nisi, nec tristique sem. Cras id tellus ac mauris posuere varius. 
+    Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. 
+    Praesent commodo eiusmod odio, eu pharetra nulla dignissim nec. 
+    Ut id nulla augue. Duis ultricies eiusmod purus, ut lobortis tortor semper a. 
+    Nam eleifend accumsan elit, In elementum lacus. Nunc varius imperdiet nisi, eget pretium augue molestiae a. 
+    Nullam ut malesuada enim. Integer non velt fringilla, porta ex vitae, porttitor velit. 
+    Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at Mauris ullamcorper tempor.</p>
+</footer>
+</body>
+</html>
